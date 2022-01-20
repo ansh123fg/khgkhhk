@@ -1,0 +1,135 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  li a:hover{
+      background-color: white;
+      color: black;
+  }
+body{
+    background-color: black;
+    /* height: 2000px; */
+}
+.slider-image{
+  height: 500px;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 150px;
+  background-size: 100% 100%;
+  background-image: url("slider2.jpg");
+  box-shadow: 1px 2px 10px 5px whitesmoke;
+  animation: slides 9s infinite linear;
+}
+@keyframes slides{
+  0%{
+    background-image: url("slider2.jpg");
+  }
+  35%{
+    background-image: url("slider1.jpg");
+  }
+  85%{
+    background-image: url("img1.jpg");
+  }
+}
+hr{
+  margin-top: 50px;
+  font-weight: bold;
+  color: red;
+  padding-bottom: 2px;
+}
+h2{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+  letter-spacing: 2px;
+ 
+}
+h2:hover{
+  background: white;
+  color: black;
+
+}
+img{
+  margin-top: 20px;
+  height: 260px;
+  width: 230px;
+  margin-left: 30px;
+  border-radius: 12px;
+  box-shadow: 1px 2px 10px 4px red;
+}
+.card{
+  /* border: 2px solid white; */
+  width: 300px;
+  height: 380px;
+  border-radius: 20px;
+  transition: 0.5 ease;
+  display: inline-block;
+  margin: 50px;
+  /* box-shadow: 1px 2px 10px 4px white; */
+}
+.card:hover{
+  transform: scale(0.9);
+}
+.Button{
+  margin-left: 40px;
+  margin-top: 19px;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 4px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  letter-spacing: 0.5px;
+}
+.Button a{
+  text-decoration: none;
+}
+#wordbutton{
+  margin-left: 80px;
+}
+#calcbutton{
+  margin-left: 100px;
+}
+#musicbutton{
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 400px){
+    li a{
+        font-size: 16px;
+    }
+    .slider-image{
+      height: 150px;
+      margin-left: 40px;
+      width: 80%;
+      margin-top: 20px;
+      background-size: 100% 100%;
+      background-image: url("slider2.jpg");
+      box-shadow: 1px 2px 10px 5px white;
+      animation: slides 9s infinite linear;
+    }
+    h2{
+      font-size: 35px;
+    }
+    .card{
+      margin-top: 2px;
+    
+    }
+}
